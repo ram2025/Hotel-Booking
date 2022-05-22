@@ -20,7 +20,7 @@ nav {
     margin-top: 0px;
     border: 2px solid black;
     border-radius: 10px;
-    background-color: lightgray;
+    background-color: rgb(50, 189, 181);
 }
 
 .navigator {
@@ -90,6 +90,10 @@ label {
     margin-bottom: 50px;
 }
 
+.wellcome p {
+    display: inline;
+}
+
 h1 {
     text-align: left;
 }
@@ -151,4 +155,15 @@ footer p {
     text-align: center;
     font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
+}
+
+@media screen and (max-width: 500px) {
+    .wellcome p {
+        display: block;
+        font-size: 30px;
+    }
+    .wellcome {
+        height: 150px;
+        margin: 50px;
+    }
 }
