@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel-Booking</title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+
+<body>
+    <header>
+        <h1>SKY Hotel Booking</h1>
+    </header>
+    <section class="navigator">
+        <nav>
+            <ul>
+                <li><a href="/index.html"><button>Home</button></a></li>
+                <li><a href="https://www.google.com/maps"><button>City</button></a></li>
+                <li><a href="./facility.HTML"><button id="facility">Facility</button></a></li>
+                <li><a href="https://www.popoptiq.com/types-of-entertainment/"><button>Entertainment</button></a></li>
+                <li><select name="select" id="select-element">
+                <option value="food">Food</option>
+                <option value="Sport">Sport</option>
+                <option value="Music">Music-facility</option>
+            </select></li>
+            </ul>
+        </nav>
+    </section>
+    <section id="content">
+        <div class="wellcome">
+            <span id="well"></span>
+            <span id="to"></span>
+            <span id="sky"></span>
+        </div>
+        <form action="">
+            <label for="Search-City">Search By City :</label>
+            <input type="search" id="search-city" name="search" placeholder="Search-City">
+            <button type="submit">Search</button>
+        </form>
+        <h1>Top Hotels</h1>
+        <div class="images">
+            <div>
+                <img src="/images/download.jpg" alt="img">
+                <h2>Hotel Kishor</h2>
+            </div>
+            <div>
+                <img src="/images/img2.jpg" alt="img">
+                <h2>Hotel Rajesh</h2>
+            </div>
+            <div>
+                <img src="/images/img3.jpg" alt="img">
+                <h2>Hotel Ram</h2>
+            </div>
+            <div>
+                <img src="/images/img4.jpg" alt="img">
+                <h2>Hotel Deepak</h2>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="f-contact">
+            <h2>contect us</h2>
+            <a href=""><img src="/images/facebook.png" alt=""></a>
+            <a href=""><img src="/images/instagram.jpg" alt=""></a>
+            <a href=""><img src="/images/github.png" alt=""></a>
+        </div>
+        <div class="f-about">
+            <h1>SKY TEAM</h1>
+            <p>“Thanks for being so honest with me about how this is impacting you.”</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script>
+        const wellcome = document.getElementById("well");
+        const to = document.getElementById("to");
+        const sky = document.getElementById("sky");
+        const faci = document.getElementById("facility");
+        const con = document.getElementById("content");
+        setInterval(function() {
+            const x = setTimeout(function() {
+                wellcome.innerHTML = "WELL-COME";
+            }, 1000);
+
+            const y = setTimeout(function() {
+                to.innerHTML = "TO";
+            }, 2000);
+            const z = setTimeout(function() {
+                sky.innerHTML = "SKY-HOTELS";
+            }, 3000);
+            setTimeout(function() {
+                wellcome.innerHTML = "";
+                to.innerHTML = "";
+                sky.innerHTML = "";
+            }, 4000);
+        }, 5000);
+    </script>
+</body>
+
+</html>
