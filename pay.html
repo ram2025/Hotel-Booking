@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment-Mode</title>
+    <style>
+        li {
+            display: inline;
+        }
+        
+        nav {
+            background-color: darkcyan;
+            height: 50px;
+            padding: 5px;
+            top: 0px;
+            position: sticky;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+        
+        body {
+            background-color: antiquewhite;
+        }
+        
+        .book h1 {
+            top: 30px;
+            text-align: center;
+            font-family: cursive;
+        }
+        
+        .book {
+            width: 400px;
+            background-color: cadetblue;
+            margin-left: 30%;
+            height: 400px;
+        }
+        
+        .book input {
+            height: 20px;
+            margin: 2px;
+        }
+        
+        .book button {
+            margin-left: 130px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding: 5px;
+            height: 40px;
+            width: 120px;
+            border: 2px solid black;
+            border-radius: 10px;
+            font-family: cursive;
+        }
+        
+        .book button:hover {
+            background-color: greenyellow;
+        }
+        
+        .book input:focus {
+            background-color: aquamarine;
+        }
+        
+        .navigator button {
+            height: 30px;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="navigator">
+        <nav>
+            <ul>
+                <li><a href="/index.html"><button>Home</button></a></li>
+                <li><a href="https://www.google.com/maps"><button>City</button></a></li>
+                <li><a href="./facility.HTML"><button id="facility">Facility</button></a></li>
+                <li><a href="https://www.popoptiq.com/types-of-entertainment/"><button>Entertainment</button></a></li>
+                <li><select name="select" id="select-element">
+                <option value="food">Food</option>
+                <option value="Sport">Sport</option>
+                <option value="Music">Music-facility</option>
+            </select></li>
+            </ul>
+        </nav>
+    </section>
+    <div class="book">
+        <h1>For Booking</h1>
+        <form action="">
+            <label for="name">First name :</label>
+            <input type="text" placeholder="Ram"><br>
+            <label for="Last-name">Last name :</label>
+            <input type="text" placeholder="Shinde"><br><br>
+            <label for="selector">Gender :</label>
+            <label for="radio"> Male</label>
+            <input type="radio" name="selector" class="check-box">
+            <label for="radio">Female</label>
+            <input type="radio" name="selector" class="check-box">
+            <label for="radio">Transgender</label>
+            <input type="radio" name="selector" class="check-box"><br><br>
+            <label for="contact">Mobile :</label>
+            <input type="text"><br><br>
+            <label for="address">Address :</label>
+            <input type="text" placeholder="Address"><br><br>
+        </form>
+        <a href="/BOOKED.html"><button id="book">BOOK NOW</button></a>
+    </div>
+</body>
+
+</html>
